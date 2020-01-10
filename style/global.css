@@ -1,0 +1,70 @@
+:root {
+    --gray-dark: #343A40;
+    --blue: #44A8F9;
+    --light: #f2f2f2;
+}
+
+body {
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    background-image: url(https://img.pngio.com/free-abstract-blue-vector-background-png-vector-clipart-psd-free-background-png-700_390.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.transition {
+    transition: none;
+}
+
+header {
+    font-family: Ubuntu, sans-serif !important;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--gray-dark);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+nav li:hover, .logo:hover {
+    transform: scale(1.5);
+}
+
+nav li, .logo {
+    transition: transform 0.3s ease-in-out;
+}
+
+nav li a, nav li a:visited {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.logo > a, .logo a:hover, .logo a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: relative;
+}

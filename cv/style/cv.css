@@ -1,0 +1,139 @@
+/* Variables */
+:root {
+    --main-color: #479099;
+   --margin-bot: 1.7rem;
+   --margin-bot-section: 2.4rem;
+   --margin-bot-sub: 0.5rem;
+   --section-width: 45%;
+}
+
+/* semantic classes */
+body {
+   background: white;
+}
+
+.main-color {
+   color: var(--main-color);
+}
+
+.center {
+   text-align: center;
+}
+
+/* Main html elements */
+p,h1,h2,h3,ul {
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style-type: none;
+}
+
+li {
+   margin-bottom: 0.3rem;
+}
+
+#cv {
+   padding: 3%;
+}
+
+/* header section */
+.header {
+   display: flex;
+   margin-bottom: 2rem;
+}
+
+#presentation, #contact {
+   flex-basis: 50%;
+}
+
+#name, #job-title {
+   font-weight: bold;
+   margin-bottom: var(--margin-bot-sub);
+}
+
+#job-title {
+   font-size: 1.1rem;
+}
+
+#description {
+   text-align: justify;
+}
+
+#contact {
+   display: grid;
+   grid-template-columns: auto 2rem;
+   grid-template-rows: 1.2rem 1.2rem 1.2rem;
+   grid-template-areas: 
+       "linkedInUrl linkedInIcon"
+       "emailAddr envelopIcon"
+       "phoneNum mobileIcon"
+       ;
+}
+
+#email, #phone, #linkedIn {
+   text-align: right;
+}
+
+/* main section */
+main {
+   display: grid;
+   grid-template-columns: var(--section-width) var(--section-width);
+   grid-template-rows: auto auto;
+   grid-row-gap: var(--margin-bot-section);
+   grid-column-gap: calc(100% - var(--section-width)*2);
+   grid-template-areas: 
+       "education experience"
+       "skills projects"
+}
+
+section {
+   text-align: center;
+}
+
+section > h2 {
+   border-top: solid black 2px;
+   border-bottom: solid black 2px;
+   margin-bottom: var(--margin-bot-sub);
+   padding-top: 0.2rem;
+   padding-bottom: 0.2rem;
+   color: var(--main-color);
+}
+
+#skills-container {
+   display: grid;
+   grid-template-columns: 1fr 40% 40% 1fr; 
+   grid-template-areas: 
+       ". languages programming ."
+       ". programs knowledge .";
+}
+
+#languages {grid-area: languages} #programming {grid-area: programming} #programs {grid-area: programs} #knowledge {grid-area: knowledge}
+
+#skills li {
+   white-space: nowrap;
+}
+
+#projects li {
+   text-align: left;
+   margin-bottom: var(--margin-bot-sub);
+}
+
+.education-container:not(:last-child), 
+.experience-container:not(:last-child), 
+.skill-container:not(:last-child),
+.project-container:not(:last-child) {
+   margin-bottom: var(--margin-bot);
+}
+
+.education-container > *:not(:last-child), 
+.experience-container > *:not(:last-child), 
+.skill-container > *:not(:last-child), 
+.project-container > *:not(:last-child)  {
+   margin-bottom: var(--margin-bot-sub);
+}
