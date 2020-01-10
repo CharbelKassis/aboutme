@@ -1,3 +1,5 @@
+@import "nav.css";
+
 :root {
     --gray-dark: #343A40;
     --blue: #44A8F9;
@@ -21,53 +23,4 @@ p, a, button, input, textarea {
 
 .transition {
     transition: none;
-}
-
-header {
-    font-family: Ubuntu, sans-serif !important;
-    min-height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--gray-dark);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-nav ul{
-    height: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    clear: both;
-}
-
-nav li {
-    display: inline-block;
-    padding: 0 30px;
-}
-
-nav li:hover, .logo:hover {
-    transform: scale(1.5);
-}
-
-nav li, .logo {
-    transition: transform 0.3s ease-in-out;
-}
-
-nav li a, nav li a:visited {
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: var(--blue);
-}
-
-.logo > a, .logo a:hover, .logo a:visited {
-    color: white;
-    text-decoration: none;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    position: relative;
-    font-weight: bolder;
 }

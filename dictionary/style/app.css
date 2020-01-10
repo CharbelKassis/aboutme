@@ -6,7 +6,7 @@
 }
 
 .loading {
-    background-image: url(loading.gif);
+    background: url(loading.gif);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -54,9 +54,11 @@
     display: block;
     width: 50%;
     height: 90%;
-    background-color: inherit;
     margin: 0 auto;
     margin-bottom: 5px;
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
 }
 
 #clearButton {

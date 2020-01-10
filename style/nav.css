@@ -1,0 +1,116 @@
+nav li a, nav li a:visited, .logo > a, .logo a:hover, .logo a:visited {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+#hambergerCheckbox {
+    display: none;
+}
+
+header {
+    background-color: var(--gray-dark);
+    min-height: 10vh;
+}
+
+@media only screen and (min-width: 800px) {
+    #hamberger {
+        display: none;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    nav ul{
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        padding: 0 30px;
+    }
+    
+    nav li:hover, .logo:hover {
+        transform: scale(1.5);
+    }
+    
+    nav li, .logo {
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    nav li a, nav li a:visited {
+        font-size: 1.4rem;
+    }
+    
+    .logo > a, .logo a:hover, .logo a:visited {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-weight: bolder;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {   
+    
+    header {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #hamberger {
+        font-size: 50px;
+        color: white;
+
+        user-select: none;
+    }
+
+    nav {
+        display: inline-block;
+        position: absolute;
+        top: -30vh;
+        right: 0;
+        font-size: 2rem;
+        transition: all 0.3s ease-in;
+        opacity: 0.5;
+        width: 50%;
+    }
+
+    #hambergerCheckbox:checked ~ nav {
+        top: 10vh;
+        opacity: 1;
+    }
+    
+    nav ul{
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        background-color: var(--gray-dark);
+        width: 100%;
+    }
+
+    nav ul li {
+        padding: 1%;
+    }
+
+    nav ul li:not(:nth-last-of-type(1)) {
+        border-bottom: solid white 1px;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}

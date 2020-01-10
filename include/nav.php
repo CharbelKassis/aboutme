@@ -2,6 +2,8 @@
     <div class="logo">
         <a href="/">Home</a>
     </div>
+        <input type="checkbox" name="navHamberger" id="hambergerCheckbox">
+        <label id="hamberger" for="hambergerCheckbox"><span>☰</span></label>
     <nav>
         <ul>
             <li><a href="/cv/en/">Curriculum vitae</a></li>
