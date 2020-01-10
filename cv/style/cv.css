@@ -7,11 +7,11 @@
    --section-width: 45%;
 }
 
-/* semantic classes */
 body {
-   background: white;
+   background: var(--light-blue);
 }
 
+/* semantic classes */
 .main-color {
    color: var(--main-color);
 }
@@ -40,6 +40,7 @@ li {
 
 #cv {
    padding: 3%;
+   background-color: white;
 }
 
 /* header section */

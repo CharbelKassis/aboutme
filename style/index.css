@@ -1,0 +1,28 @@
+main {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    letter-spacing: 4px;
+}
+
+main a, main a:hover, main a:visited {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+article {
+    width: 70%;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 1%;
+}
+

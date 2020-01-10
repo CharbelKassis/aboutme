@@ -2,6 +2,12 @@
     font-size: 16px;
 }
 
+body {
+    background-image: url(https://img.pngio.com/free-abstract-blue-vector-background-png-vector-clipart-psd-free-background-png-700_390.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .project > p {
     font-family: Ubuntu, sans-serif;
 }
@@ -46,7 +52,7 @@
 
     .project .front {
         backface-visibility: hidden;
-        background-color: var(--light);
+        background-color: var(--light-blue);
     }
 
     .project .back {
@@ -57,7 +63,7 @@
     }
 
     .project:hover {
-        cursor: pointer;
+        cursor: default;
     }
 
     .project:hover .front {

@@ -4,5 +4,5 @@
     include($path);
 
     $htmlBuilder = new HTMLBuilder();
-    $htmlBuilder->addBody("index.html")->getHtml();
+    $htmlBuilder->addStyle("./style/index.css")->addBody("index.html")->getHtml();
 ?>
