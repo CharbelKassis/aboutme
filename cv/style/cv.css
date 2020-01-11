@@ -120,6 +120,10 @@ section > h2 {
    white-space: nowrap;
 }
 
+#skills h3 {
+   word-wrap: break-word;
+}
+
 #projects li {
    text-align: left;
    margin-bottom: var(--margin-bot-sub);
@@ -177,4 +181,8 @@ section > h2 {
    #skills-container {
       display: block;
    }
+}
+
+#link1 {
+   visibility: hidden;
 }

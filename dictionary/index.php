@@ -6,7 +6,7 @@ include($path);
 
 $htmlBuilder = new HTMLBuilder();
 
-$htmlBuilder->addStyles(["./style/main.css", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"])
+$htmlBuilder->addStyle("./style/main.css")
             ->addScript("./app.js",true)
             ->addBody("dictionary.html")
             ->getHtml();

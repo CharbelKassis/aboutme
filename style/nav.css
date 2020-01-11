@@ -8,11 +8,14 @@ nav li a, nav li a:visited, .logo > a, .logo a:hover, .logo a:visited {
 }
 
 header {
+    z-index: 100;
+    position: relative;
     background-color: var(--gray-dark);
     min-height: 10vh;
 }
 
 @media only screen and (min-width: 800px) {
+    
     #hamberger {
         display: none;
     }
@@ -71,24 +74,24 @@ header {
     #hamberger {
         font-size: 50px;
         color: white;
-
         user-select: none;
     }
 
     nav {
         display: inline-block;
         position: absolute;
-        top: -100vh;
         right: 0;
+        top: 5vh;
         font-size: 2rem;
-        transition: all 0.3s ease-in;
-        opacity: 0.5;
+        transition: transform 0.1s ease-in, top 0.2s ease-out;
         width: 50%;
+        transform: scaleY(0);
+        transform-origin: top;
     }
 
     #hambergerCheckbox:checked ~ nav {
+        transform: scaleY(1);
         top: 10vh;
-        opacity: 1;
     }
     
     nav ul{
@@ -105,8 +108,8 @@ header {
         padding: 1%;
     }
 
-    nav ul li:not(:nth-last-of-type(1)) {
-        border-bottom: solid white 1px;
+    nav ul li {
+        border-top: solid white 1px;
     }
 
     .logo {

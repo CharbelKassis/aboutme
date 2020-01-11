@@ -4,4 +4,6 @@
     include($path);
 
     $htmlBuilder = new HTMLBuilder();
-    $htmlBuilder->addStyle("./style/projects.css")->addBody("projects.html")->getHtml();
+    $htmlBuilder->addStyle("./style/projects.css")
+                ->addBody("projects.html")
+                ->getHtml();
