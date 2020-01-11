@@ -78,7 +78,7 @@ header {
     nav {
         display: inline-block;
         position: absolute;
-        top: -30vh;
+        top: -100vh;
         right: 0;
         font-size: 2rem;
         transition: all 0.3s ease-in;
