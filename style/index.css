@@ -10,18 +10,71 @@ main a, main a:hover, main a:visited {
     color: var(--blue);
 }
 
-main p {
+article {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content {
+    flex-basis: 80%;
+}
+
+.content p {
     text-align: justify;
 }
 
-article {
-    width: 70%;
-    margin: 0 auto;
+.images {
+    flex-basis: 20%;
 }
 
-img {
+.content img {
     border-radius: 50%;
     float: left;
     shape-outside: circle(50%);
-    margin-right: 10%;
+    margin-right: 5%;
+}
+
+.images ul {
+    width: 100%;
+    list-style: none;
+}
+
+.images li:not(:nth-last-child(1)) {
+    margin-bottom: 10px;
+}
+
+.images img {
+    width: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .content, .images {
+        flex-basis: auto;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .content p {
+        text-align: left;
+    }
+
+    .images ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .images li {
+        width: 25%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .images img {
+        width: 25%;
+    }
 }
