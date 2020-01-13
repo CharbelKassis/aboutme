@@ -5,7 +5,7 @@
 
     $htmlBuilder = new HTMLBuilder();
     
-    $htmlBuilder->addStyle("../style/cv.css")
+    $htmlBuilder->addStyle("/style/cv/cv.css")
                 ->addBody("cv.html")
                 ->getHtml();
 ?>

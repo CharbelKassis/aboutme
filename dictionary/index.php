@@ -6,7 +6,7 @@ include($path);
 
 $htmlBuilder = new HTMLBuilder();
 
-$htmlBuilder->addStyle("./style/main.css")
+$htmlBuilder->addStyle("/style/dictionary/dictionary.css")
             ->addScript("./app.js",true)
             ->addBody("dictionary.html")
             ->getHtml();
