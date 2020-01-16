@@ -1,8 +1,20 @@
+:root {
+    --xSize: 2rem;
+}
+
+input,select {
+    border-radius: 5px;
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.hide {
+    display: none;
 }
 
 .loading {
@@ -29,11 +41,12 @@
 }
 
 #input {
-    height: 25vh;
+    height: 15vh;
 }
 
 #output {
     height: 75vh;
+    text-align: center;
 }
 
 #definitionsInput {
@@ -43,19 +56,25 @@
 }
 
 #definitionsOutput {
-    height: 30%;
+    height: 90%;
 }
 
 #imageOutput {
-    height: 70%;
+    position: fixed;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(23,23,23,0.9);
 }
 
 #resultsArea {
     display: block;
     width: 50%;
-    height: 90%;
+    height: 80%;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     background-color: inherit;
     border: none;
     font-size: 1.5rem;
@@ -66,16 +85,32 @@
     margin: 0 auto;
 }
 
-input,select {
-    border-radius: 5px;
+#toggleImages {
+    display: none;
 }
 
-button {
+#toggleImages:checked ~ #imageOutput {
+    display: flex;
+}
+
+#hideImages {
+    position: relative;
+    font-size: var(--xSize);
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+    width: var(--xSize);
+    height: var(--xSize);
+    bottom: 25vh;
+    left: calc(90vw - var(--xSize));
+}
+
+button, #showImages {
     border-radius: 5px;
     background: none;
     border: solid black 1px;
-    transform: translateY(-3px);
-    display: block;          
+    padding: 5px;
+    transform: translateY(-3px); 
 }
 
 button:not(:disabled) {
@@ -87,10 +122,6 @@ button:focus:not(:disabled) {
     outline: none;
     transform: translateY(0);
     box-shadow: none;
-}
-
-button:hover:not(:disabled) {
-    background-color: var(--blue);
 }
 
 button:disabled {
