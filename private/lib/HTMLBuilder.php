@@ -12,6 +12,7 @@
         <script src=\"/000webhostapp/debloater.js\">
         <script>document.addEventListener('DOMContentLoaded',e=>document.body.classList.remove('transition'));</script>";
         private $body = "";
+        private $title = "";
 
         /**
          * add CSS urls to the head
@@ -73,9 +74,9 @@
 
         
         /**
-         * add the HTML body to the html
+         * add the HTML body to the html. Must be a php file.
          *
-         * @param  string $body -The url to the body code
+         * @param  string $body -The url to the body code, must be a php file because it will be included when building the htnl page
          *
          * @return HTMLBuilder
          */
@@ -86,11 +87,27 @@
         }
 
         /**
+         * add the title to the head
+         * 
+         * @param string $title -The title of the web page
+         * 
+         * @return HTMLBuilder
+         */
+        public function setTitle($title) {
+            if(is_string($title))
+                $this->title = "<title>$title</title>";
+            return $this;
+        }
+
+        /**
          * echo the HTML
          */
         public function getHtml() {
-            echo($this->head."</head>");
+            echo($this->head . $this->title . "</head>");
             echo("<body class='transition'>");
+
+            $title = $this->title;
+
             include PRIVATE_ROOT."/include/nav.php";
             include $this->body;
             echo("</body>");
