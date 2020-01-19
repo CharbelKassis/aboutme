@@ -81,7 +81,7 @@
          */
         public function addBody($body) {
             if(is_string($body))
-                $this->body = file_get_contents($body);
+                $this->body = $body;
             return $this;
         }
 
@@ -91,9 +91,9 @@
         public function getHtml() {
             echo($this->head."</head>");
             echo("<body class='transition'>");
-            $rootPath = $_SERVER['DOCUMENT_ROOT'];
-            include($rootPath."/include/nav.php");
-            echo($this->body."</body>");
+            include PRIVATE_ROOT."/include/nav.php";
+            include $this->body;
+            echo("</body>");
             echo("</html>");
         }
     }

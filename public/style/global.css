@@ -21,6 +21,13 @@ p, a, button, input, textarea, h1, h2 {
     text-align: center;
 }
 
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--navHeight));
+}
+
 .transition {
     transition: none;
 }

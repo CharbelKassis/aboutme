@@ -1,3 +1,7 @@
+:root {
+    --navHeight: 10vh;
+}
+
 nav li a, nav li a:visited, .logo > a, .logo a:hover, .logo a:visited {
     text-decoration: none;
     color: var(--blue);
@@ -11,7 +15,7 @@ header {
     z-index: 100;
     position: relative;
     background-color: var(--gray-dark);
-    min-height: 10vh;
+    height: var(--navHeight);
 }
 
 @media only screen and (min-width: 801px) {
