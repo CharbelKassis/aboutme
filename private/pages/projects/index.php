@@ -3,6 +3,7 @@
     
     $htmlBuilder->addStyle("/style/projects/projects.css")
                 ->setTitle("Projects")
-                ->addBody("../private/pages/projects/projects.php")
+                ->addBody(PRIVATE_ROOT."pages/projects/projects.php")
+                ->addBodyClass("imageBackground")
                 ->getHtml();
 ?>

@@ -1,184 +1,194 @@
 /* Variables */
 :root {
-  --main-color: #479099;
- --margin-bot: 1.7rem;
- --margin-bot-section: 2.4rem;
- --margin-bot-sub: 0.5rem;
- --section-width: 45%;
+   --main-color: #479099;
+  --margin-bot: 1.7rem;
+  --margin-bot-section: 2.4rem;
+  --margin-bot-sub: 0.5rem;
+  --section-width: 45%;
 }
 
 body {
- background: var(--light-blue);
- font-family: Ubuntu, sans-serif;
+  background: var(--light-blue);
+  font-family: Ubuntu, sans-serif;
+}
+
+
+#cv a, #cv a:visited, #cv a:hover {
+  color: var(--main-color);
+  font-style: italic;
 }
 
 /* semantic classes */
 .main-color {
- color: var(--main-color);
+  color: var(--main-color);
 }
 
 .center {
- text-align: center;
+  text-align: center;
 }
 
 /* Main html elements */
 p,h1,h2,h3,ul {
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
- list-style-type: none;
+  list-style-type: none;
 }
 
 li {
- margin-bottom: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 #cv {
- padding: 3%;
- background-color: white;
+  padding: 3%;
+  background-color: white;
 }
 
 /* header section */
 .header {
- display: flex;
- margin-bottom: 2rem;
+  display: flex;
+  margin-bottom: 2rem;
 }
 
 #presentation, #contact {
- flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 #name, #job-title {
- font-weight: bold;
- margin-bottom: var(--margin-bot-sub);
+  font-weight: bold;
+  margin-bottom: var(--margin-bot-sub);
 }
 
 #job-title {
- font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 #description {
- text-align: justify;
+  text-align: justify;
 }
 
 #contact {
- display: grid;
- grid-template-columns: auto 2rem;
- grid-template-rows: repeat(4,1.3rem);
+  display: grid;
+  grid-template-columns: auto 2rem;
+  grid-template-rows: repeat(4,1.3rem);
 }
 
 #contact p {
- text-align: right;
+  text-align: right;
 }
 
 /* main section */
 main {
- display: grid;
- grid-template-columns: var(--section-width) var(--section-width);
- grid-template-rows: auto auto;
- grid-row-gap: var(--margin-bot-section);
- grid-column-gap: calc(100% - var(--section-width)*2);
- grid-template-areas: 
-     "education experience"
-     "skills projects"
+  display: grid;
+  grid-template-columns: var(--section-width) var(--section-width);
+  grid-template-rows: auto auto;
+  grid-row-gap: var(--margin-bot-section);
+  grid-column-gap: calc(100% - var(--section-width)*2);
+  grid-template-areas: 
+      "education experience"
+      "skills projects"
 }
 
 section {
- text-align: center;
+  text-align: center;
 }
 
 section > h2 {
- border-top: solid black 2px;
- border-bottom: solid black 2px;
- margin-bottom: var(--margin-bot-sub);
- padding-top: 0.2rem;
- padding-bottom: 0.2rem;
- color: var(--main-color);
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  margin-bottom: var(--margin-bot-sub);
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: var(--main-color);
 }
 
 #skills-container {
- display: grid;
- grid-template-columns: 1fr 40% 40% 1fr; 
- grid-template-areas: 
-     ". languages programming ."
-     ". programs knowledge .";
+  display: grid;
+  grid-template-columns: 1fr 40% 40% 1fr; 
+  grid-template-areas: 
+      ". languages programming ."
+      ". programs knowledge .";
 }
 
 #languages {grid-area: languages} #programming {grid-area: programming} #programs {grid-area: programs} #knowledge {grid-area: knowledge}
 
 #skills li {
- white-space: nowrap;
+  white-space: nowrap;
 }
 
 #skills h3 {
- word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 #projects li {
- text-align: left;
- margin-bottom: var(--margin-bot-sub);
+  text-align: left;
+  margin-bottom: var(--margin-bot-sub);
+}
+
+#educations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .education-container:not(:last-child), 
 .experience-container:not(:last-child), 
 .skill-container:not(:last-child),
 .project-container:not(:last-child) {
- margin-bottom: var(--margin-bot);
+  margin-bottom: var(--margin-bot);
 }
 
 .education-container > *:not(:last-child), 
 .experience-container > *:not(:last-child), 
 .skill-container > *:not(:last-child), 
 .project-container > *:not(:last-child)  {
- margin-bottom: var(--margin-bot-sub);
+  margin-bottom: var(--margin-bot-sub);
 }
 
 @media only screen and (max-width: 788px) {
- 
- #cv {
-    padding: 0;
-    font-size: 0.9rem;
- }
+  
+  #cv {
+     padding: 0;
+     font-size: 1.2rem;
+  }
 
- main {
-    width: 100%;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-template-areas: unset;
- }
+  main {
+     width: 100%;
+     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+     grid-template-areas: unset;
+  }
 
- #contact {
-    grid-template-rows: auto;
-    margin-bottom: 20px;
-    align-self: center;
- }
+  #contact {
+     grid-template-rows: auto;
+     margin-bottom: 20px;
+     align-self: center;
+  }
 
- #email, #phone, #linkedIn {
-    text-align: center;
- }
+  #email, #phone, #linkedIn {
+     text-align: center;
+  }
 
- #job-title {
-    font-size: 1.5rem;
- }
+  #job-title {
+     font-size: 1.5rem;
+  }
 
- #name > p {
-    text-align: center;
- }
- 
- .header {
-    flex-direction: column-reverse;
- }
+  #name > p {
+     text-align: center;
+  }
+  
+  .header {
+     flex-direction: column-reverse;
+  }
 
- #skills-container {
-    display: block;
- }
-}
-
-#link1 {
- visibility: hidden;
+  #skills-container {
+     display: block;
+  }
 }

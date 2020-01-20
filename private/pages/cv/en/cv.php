@@ -7,7 +7,7 @@
                 Reliable, autonomous and good team spirit<br>I am currently looking for new opportunities.</p></div>
         </div>
         <div id="contact">
-            <p id="website"><a href="http://charbelkassis.000webhostapp.com/">http://charbelkassis.000webhostapp.com/</a></p><i class="fab fa-internet-explorer main-color center"></i>
+            <p id="website"><a href="http://charbelkassis.000webhostapp.com/">charbelkassis.000webhostapp.com</a></p><i class="fab fa-internet-explorer main-color center"></i>
             <p id="linkedIn"><a href="https://www.linkedin.com/in/charbel-kassis">www.linkedin.com/in/charbel-kassis</a></p><i class="fab fa-linkedin-in main-color center"></i>
             <p id="email"><a href="mailto:charbel.kassis.90@gmail.com">charbel.kassis.90@gmail.com</a></p><i class="fas fa-envelope main-color center"></i>
             <p id="phone">514-692-7310</p><i class="fas fa-mobile-alt main-color center"></i> 
@@ -17,23 +17,11 @@
     <main>
         <section id="education">
             <h2>EDUCATION</h2>
-            <div>
-                <div id="educations-container">
-                    <div class="education-container">
-                        <h3>High School Diploma</h3>
-                        <p>Pasteur College</p>
-                        <p>2003-2007</p>
-                    </div>
-                    <div class="education-container">
-                        <h3>Natural Science</h3>
-                        <p>CEGEP Bois-de-Boulogne</p>
-                        <p>2007-2010</p>
-                    </div>    
-                    <div class="education-container">
-                        <h3>Bachelor in Computer Science</h3>
-                        <p>University of Montreal</p>
-                        <p>2014-2017</p>
-                    </div>
+            <div id="educations-container">  
+                <div class="education-container">
+                    <h3>Bachelor in Computer Science</h3>
+                    <p>University of Montreal</p>
+                    <p>2014-2017</p>
                 </div>
             </div>
         </section>

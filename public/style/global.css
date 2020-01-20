@@ -31,3 +31,10 @@ p, a, button, input, textarea, h1, h2 {
 .transition {
     transition: none;
 }
+
+.imageBackground {
+    background-image: url(/pic/free-abstract-blue-vector-background-png-vector-clipart-psd-free-background-png-700_390.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

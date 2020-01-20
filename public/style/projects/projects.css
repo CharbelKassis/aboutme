@@ -2,12 +2,6 @@
     font-size: 16px;
 }
 
-body {
-    background-image: url(/pic/free-abstract-blue-vector-background-png-vector-clipart-psd-free-background-png-700_390.png);
-    background-position: center;
-    background-size: cover;
-}
-
 .project > p {
     font-family: Ubuntu, sans-serif;
 }
@@ -20,7 +14,8 @@ body {
 
 .projects {
     display: flex;
-    margin: 5% 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -92,7 +87,3 @@ body {
     text-decoration: none;
     font-size: 3rem;
 }
-
-#link2 {
-    visibility: hidden;
- }

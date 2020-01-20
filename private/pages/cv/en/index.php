@@ -3,6 +3,6 @@
     
     $htmlBuilder->addStyle("/style/cv/cv.css")
                 ->setTitle("English CV")
-                ->addBody("../private/pages/cv/en/cv.php")
+                ->addBody(PRIVATE_ROOT."pages/cv/en/cv.php")
                 ->getHtml();
 ?>

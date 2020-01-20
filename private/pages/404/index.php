@@ -1,7 +1,7 @@
 <?php
     $htmlBuilder = new HTMLBuilder();
     
-    $htmlBuilder->addBody("../private/pages/404/404.php")
+    $htmlBuilder->addBody(PRIVATE_ROOT."pages/404/404.php")
                 ->setTitle("Page Not Found")
                 ->getHtml();
 ?>
