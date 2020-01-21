@@ -12,15 +12,13 @@ h1 {
 
 #contact {
     display: flex;
-    max-width: 20em;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.75);
     background-color: var(--light-blue);
-    margin: 0 auto;
+    min-height: unset;
 }
 
 #contact > div {

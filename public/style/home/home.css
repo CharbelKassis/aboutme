@@ -38,6 +38,7 @@ article {
 .images ul {
     width: 100%;
     list-style: none;
+    text-align: center;
 }
 
 .images li:not(:nth-last-child(1)) {
