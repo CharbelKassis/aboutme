@@ -32,7 +32,7 @@
         <div class="card flipcard project">
             <div class="front">
                 <h2>Linklimousines</h2>
-                <p>Linklimouses's website is one of the website's I have worked on at Webtmize. The site was ported to Wordpress and was slightly modified from it's older version, some JavaScript functionalities have to be rewritten from scratch because they didn't exist in the Wordpress theme we have used.</p>
+                <p>Linklimouses's website is one of the website's I have worked on at Webtmize. The site was ported to Wordpress and was slightly modified from it's older version, some JavaScript functionalities had to be rewritten from scratch because they didn't exist in the Wordpress theme we have used.</p>
             </div>
             <div class="back block-center">
                 <a href="https://linklimousines.com/">View the website!</a>
@@ -40,8 +40,8 @@
         </div>
         <div class="card flipcard project">
             <div class="front">
-                <h2>Services Financiers Flauto</h2>
-                <p>Servicefinancierflauto is a website that I have created with the help of Webtmize's graphic designer at Webtmize.</p>
+                <h2>Service Financier Flauto</h2>
+                <p>Servicefinancierflauto is a website that I have created with the help of Webtmize's graphics designer.</p>
             </div>
             <div class="back block-center">
                 <a href="https://servicesfinanciersflauto.com/">View the website!</a>
