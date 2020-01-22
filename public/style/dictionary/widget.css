@@ -26,6 +26,8 @@
 }
 
 .slider-item {
+    max-height: 200px;
+    max-width: 200px;
     height: 100%;
     position: relative;
     right: 0;

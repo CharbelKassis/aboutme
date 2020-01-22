@@ -20,7 +20,6 @@
                     $this->addStyle($style);
             return $this;
         }
-
         
         /**
          * add a CSS url to the head
