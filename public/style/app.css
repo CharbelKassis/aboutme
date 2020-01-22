@@ -1,0 +1,135 @@
+:root {
+    --xSize: 2rem;
+}
+
+input,select {
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hide {
+    display: none;
+}
+
+.loading {
+    background: url(/pic/loading.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clear {
+    border: none;
+    resize: none;
+}
+
+.image {
+    object-fit: cover;
+}
+
+#userInput, #selectedDictionary {
+    font-size: 1.2em;
+}
+
+#input, #output {
+    margin-bottom: 0;
+}
+
+#input {
+    height: 15vh;
+}
+
+#output {
+    height: 75vh;
+    text-align: center;
+}
+
+#definitionsInput {
+    height: 100%;
+    font-size: 1rem;
+    background-color: inherit;
+}
+
+#definitionsOutput {
+    height: 90%;
+}
+
+#imageOutput {
+    position: fixed;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(23,23,23,0.9);
+}
+
+#resultsArea {
+    display: block;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#clearButton {
+    width: 20%;
+    margin: 0 auto;
+}
+
+#toggleImages {
+    display: none;
+}
+
+#toggleImages:checked ~ #imageOutput {
+    display: flex;
+}
+
+#hideImages {
+    position: relative;
+    font-size: var(--xSize);
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+    width: var(--xSize);
+    height: var(--xSize);
+    bottom: 25vh;
+    left: calc(90vw - var(--xSize));
+}
+
+button, #showImages {
+    border-radius: 5px;
+    background: none;
+    border: solid black 1px;
+    padding: 5px;
+    transform: translateY(-3px); 
+}
+
+button:not(:disabled) {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:focus:not(:disabled) {
+    outline: none;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+button:disabled {
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 900px) {
+    #resultsArea {
+        width: 90%;
+    }
+}

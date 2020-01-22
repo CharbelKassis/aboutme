@@ -1,56 +1,12 @@
-import ImageModel from "./image.model.js";
-import ImageView from "./image.view.js";
+import Controller from "../mvc/Controller.js";
 
-export default class ImageController {
+export default class ImageController extends Controller {
 
     constructor(){
+        super();
         this.__search = document.getElementById("searchButton");
         this.__userInput = document.getElementById("userInput");
         this.__clear = document.getElementById("clearButton");
-        this.__observers = [];
-    }
-
-    /**
-     * @param {ImageModel} imageModel
-     */
-    set model(imageModel) {
-        this.__model = imageModel;
-        this.__model.subscribe(this);
-        this.subscribe(this.__model);
-    }
-
-    /**
-     * @param {ImageView} imageView
-     */
-    set view(imageView) {
-        this.__view = imageView;
-    }
-
-    start() {
-        document.addEventListener("DOMContentLoaded",()=>{
-            //clear the images when a search is demanded or when clear button is pressed
-            this.__userInput.addEventListener("keydown",e=>{
-                if(e.key === "Enter") this.__model.images = [];
-            });
-            this.__search.addEventListener("click",e=>{
-                this.__model.images = [];
-            });
-            this.__clear.addEventListener("click",e=>{
-                this.__model.images = [];
-            });
-        });
-    }
-
-    subscribe(observer) {
-        if(!this.__observers.includes(observer)) {
-            this.__observers.push(observer);
-        }
-    }
-
-    __notify(change) {
-        this.__observers.forEach(observer=>{
-            observer.update(change,this);
-        });
     }
 
     update(message,subject) {
@@ -70,5 +26,18 @@ export default class ImageController {
                     });
             }
         }
+    }
+
+    __bootstrap() {
+        //clear the images when a search is called or when clear button is pressed
+        this.__userInput.addEventListener("keydown",e=>{
+            if(e.key === "Enter") this.__model.images = [];
+        });
+        this.__search.addEventListener("click",e=>{
+            this.__model.images = [];
+        });
+        this.__clear.addEventListener("click",e=>{
+            this.__model.images = [];
+        });
     }
 }

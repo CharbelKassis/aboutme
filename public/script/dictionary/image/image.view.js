@@ -6,8 +6,8 @@ export default class ImageView {
         this.__imageOutput = document.getElementById("imageOutput");
         this.__showImages = document.getElementById("showImages");
         this.__slider = new Slider();
-        this.__slider.slidingBehavior = Slider.itemMoving;
         this.__slider.arrowColor = "var(--blue)";
+        this.__slider.slidingBehavior = Slider.itemMoving;
     }
 
     /**

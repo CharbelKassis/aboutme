@@ -2,24 +2,15 @@ import Dictionary from "../dictionary/dictionary.js";
 import DefinitionsController from "./definitions.controller.js";
 import DefinitionsModel from "./definitions.model.js";
 import DefinitionsView from "./definitions.view.js";
+import MVC from "../mvc/MVC.js";
 
-export default class Definitions {
+export default class Definitions extends MVC {
 
     /**
      * 
-     * @param {Dictionary[]} dictionaries 
+     * @param {Dictionary[]} dictionaries -The list of dictionaries
      */
     constructor(dictionaries) {
-        this.model = new DefinitionsModel(dictionaries);
-        this.view = new DefinitionsView();
-        this.controller = new DefinitionsController();
-
-        this.controller.model = this.model;
-        this.controller.view = this.view;
+        super(new DefinitionsModel(dictionaries), new DefinitionsView(), new DefinitionsController());
     }
-
-    start() {
-        this.controller.start();
-    }
-
 }
