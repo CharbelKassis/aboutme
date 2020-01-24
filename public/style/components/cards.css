@@ -9,8 +9,6 @@
 .card {
     flex-basis: var(--card-width);
     min-height: var(--card-min-height);
-    margin-right: var(--card-margin-right);
-    margin-bottom: var(--card-margin-bottom);
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 

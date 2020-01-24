@@ -50,3 +50,9 @@ i {
     color: var(--gray-dark);
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 800px) {
+    #contactmeParagraph {
+        width: 100%;
+    }
+}

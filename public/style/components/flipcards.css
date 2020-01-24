@@ -6,6 +6,8 @@
 .flipcard {
     position: relative;
     perspective: 1000px;
+    margin-right: var(--card-margin-right);
+    margin-bottom: var(--card-margin-bottom);
 }
 
 .flipcard .front, .flipcard .back {
