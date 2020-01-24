@@ -1,13 +1,12 @@
 <?php
-
 /**
  * This class will handle the control of the URL parameters, it will decide which page to show depending on the parameters.
  * 
- * 1) /{page}/ => will execute /private/pages/page/index.php if it exists
+ * 1) /{page}/ => will execute /private/pages/{page}/index.php if it exists
  * 2) /{page}/{lang} => will execute /private/pages/{page}/{lang}/index.php if it exists, {lang} is the language version of the page.
  * 3) /{page}/a/.../z => this will redirect to 
- *          1) if a is not {lang}
- *          2) if a is {lang}
+ *          1) /{page}/ if a is not {lang}
+ *          2) /{page}/{lang} if a is {lang}
  */
 class UrlHandler {
 

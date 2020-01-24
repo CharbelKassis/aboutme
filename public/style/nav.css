@@ -1,5 +1,6 @@
 :root {
     --navHeight: 10vh;
+    --navWidth: 90%;
 }
 
 nav li a, nav li a:visited, .logo > a, .logo a:hover, .logo a:visited {
@@ -25,7 +26,8 @@ header {
     }
     
     header {
-        width: 100%;
+        width: var(--navWidth);
+        margin: 0 auto;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -76,36 +78,50 @@ header {
     }
     
     #hamberger {
-        font-size: 50px;
         color: white;
         user-select: none;
+        transition: all 0.1s ease-in;
+        font-size: 35px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        border: solid var(--blue) 5px;
     }
 
     nav {
+        height: 100%;
         display: inline-block;
         position: absolute;
         right: 0;
-        top: 5vh;
         font-size: 2rem;
-        transition: transform 0.1s ease-in, top 0.2s ease-out;
         width: 50%;
-        transform: scaleY(0);
-        transform-origin: top;
+        pointer-events: none;
     }
 
-    #hambergerCheckbox:checked ~ nav {
+    #hambergerCheckbox:checked ~ nav>ul {
         transform: scaleY(1);
-        top: 10vh;
+        pointer-events: all;
+    }
+
+    #hambergerCheckbox:checked + #hamberger {
+        background-color: var(--blue);
+        color: var(--gray-dark);
     }
     
     nav ul{
+        position: absolute;
+        transform: scaleY(0);
+        width: 100%;
+        top: var(--navHeight);
+        transition: transform 0.1s ease-in;
+        transform-origin: top;
         text-align: center;
         list-style: none;
         margin: 0;
         padding: 0;
-        display: inline-block;
         background-color: var(--gray-dark);
-        width: 100%;
+
     }
 
     nav ul li {

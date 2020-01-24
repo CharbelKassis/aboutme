@@ -138,10 +138,11 @@
             echo $bodyTag;
 
             include PRIVATE_ROOT."/include/nav.php";
+            echo "<div id=\"main\">";
             include $this->body;
             //TODO include the footer
 
-            echo "</body>";
+            echo "</div></body>";
         }
 
         /**

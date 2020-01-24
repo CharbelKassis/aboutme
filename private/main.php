@@ -1,7 +1,7 @@
 <?php
     include_once "config.php";
     include_once "lib/HTMLBuilder.php";
-    include_once "urlHandler.php";
+    include_once "UrlHandler.php";
 
     if(isset($_GET["url"])) 
         $url = $_GET["url"];
