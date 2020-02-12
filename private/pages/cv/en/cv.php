@@ -17,11 +17,18 @@
     <main>
         <section id="education">
             <h2>EDUCATION</h2>
-            <div id="educations-container">  
+            <div id="educations-container">
+                <div class="education-container">
+                    <h3>High School</h3>
+                    <p>Collège Pasteur</p>
+                </div>
+                <div class="education-container">
+                    <h3>CEGEP: Natural Science</h3>
+                    <p>Collège de Bois-de-Boulogne</p>
+                </div>
                 <div class="education-container">
                     <h3>Bachelor in Computer Science</h3>
-                    <p>University of Montreal</p>
-                    <p>2014-2017</p>
+                    <p>Université de Montreal</p>
                 </div>
             </div>
         </section>
@@ -73,11 +80,9 @@
                     <h3>Programs/Tools</h3>
                     <ul>
                         <li>Visual Studio Code</li>
-                        <li>Sublime Text</li>
-                        <li>Notepad++</li>
                         <li>Eclipse</li>
-                        <li>Emacs</li>
                         <li>Android Studio</li>
+                        <li>Chrome Developer Tools</li>
                     </ul>
                 </div>
                 <div class="skill-container" id="knowledge">
@@ -86,6 +91,7 @@
                         <li>Git</li>
                         <li>jQuery</li>
                         <li>Angular</li>
+                        <li>React</li>
                         <li>Wordpress</li>
                         <li>Moneris API</li>
 
@@ -109,6 +115,10 @@
                     <li><strong>HTML/CSS</strong> only websites. </li>
                     <li><strong>Python</strong> very basic terminal/shell</li>
                 </ul>
+            </div>
+            <div class="project-container">
+                <h3>Other projects: </h3>
+                <p>Check my other projects, both personal and job related, on my website: <a href="http://charbelkassis.000webhostapp.com/projects/">charbelkassis.000webhostapp.com/projects</a></p>
             </div>
         </section>
     </main>

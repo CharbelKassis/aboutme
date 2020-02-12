@@ -20,9 +20,16 @@
             <h2>ÉDUCATION</h2>
             <div id="educations-container">
                 <div class="education-container">
-                    <h3>Baccalauréat en informatique</h3>
-                    <p>Université de Montréal</p>
-                    <p>2014-2017</p>
+                    <h3>École Secondaire</h3>
+                    <p>Collège Pasteur</p>
+                </div>
+                <div class="education-container">
+                    <h3>CEGEP: Science de la nature</h3>
+                    <p>Collège de Bois-de-Boulogne</p>
+                </div>
+                <div class="education-container">
+                    <h3>Baccalauréat en Informatique</h3>
+                    <p>Université de Montreal</p>
                 </div>
             </div>
         </section>
@@ -74,11 +81,9 @@
                     <h3>Programmes/Outils</h3>
                     <ul>
                         <li>Visual Studio Code</li>
-                        <li>Sublime Text</li>
-                        <li>Notepad++</li>
                         <li>Eclipse</li>
-                        <li>Emacs</li>
                         <li>Android Studio</li>
+                        <li>Chrome Developer Tools</li>
                     </ul>
                 </div>
                 <div class="skill-container" id="knowledge">
@@ -87,6 +92,7 @@
                         <li>Git</li>
                         <li>jQuery</li>
                         <li>Angular</li>
+                        <li>React</li>
                         <li>Wordpress</li>
                         <li>Moneris API</li>
                     </ul>
@@ -110,6 +116,10 @@
                     <li><strong>Python</strong> terminal/shell très basique</li>
                 </ul>
             </div>
+            <div class="project-container">
+                <h3>Autres projects: </h3>
+                <p>Regardez mes autres projects, personnels et reliés au travail, sur mon site web: <a href="http://charbelkassis.000webhostapp.com/projects/">charbelkassis.000webhostapp.com/projects</a></p>
+            </div>
         </section>
     </main>
-</div>
+</div>    
