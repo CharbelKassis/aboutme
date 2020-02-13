@@ -68,6 +68,23 @@ header {
 
 }
 
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+    :root {
+        --navHeight: 18vh;
+    }
+
+    #hamberger {
+        font-size: 10vh;
+    }
+}
+
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+    #hamberger {
+        font-size: 5vh;
+    }
+}
+
 @media only screen and (max-width: 800px) {   
     
     header {
@@ -78,12 +95,14 @@ header {
     }
     
     #hamberger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: white;
         user-select: none;
         transition: all 0.1s ease-in;
-        font-size: 35px;
-        width: 50px;
-        height: 50px;
+        width: calc(var(--navHeight) - 20px);
+        height: calc(var(--navHeight) - 20px);
         text-align: center;
         border-radius: 50%;
         border: solid var(--blue) 5px;

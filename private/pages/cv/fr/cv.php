@@ -53,7 +53,7 @@
         </section>
 
         <section id="skills">
-            <h2>SKILLS</h2>
+            <h2>COMPÉTENCES</h2>
             <div id="skills-container">
                 <div class="skill-container" id="languages">
                     <h3>Langues</h3>
@@ -78,16 +78,16 @@
                     </ul>
                 </div>
                 <div class="skill-container" id="programs">
-                    <h3>Programmes/Outils</h3>
+                    <h3>Outils</h3>
                     <ul>
                         <li>Visual Studio Code</li>
                         <li>Eclipse</li>
                         <li>Android Studio</li>
-                        <li>Chrome Developer Tools</li>
+                        <li>Chrome Dev Tools</li>
                     </ul>
                 </div>
                 <div class="skill-container" id="knowledge">
-                    <h3>Autres connaissances</h3>
+                    <h3>Autres</h3>
                     <ul>
                         <li>Git</li>
                         <li>jQuery</li>
@@ -118,7 +118,7 @@
             </div>
             <div class="project-container">
                 <h3>Autres projects: </h3>
-                <p>Regardez mes autres projects, personnels et reliés au travail, sur mon site web: <a href="http://charbelkassis.000webhostapp.com/projects/">charbelkassis.000webhostapp.com/projects</a></p>
+                <p>Regardez mes autres projets, personnels et reliés au travail, sur mon site web: <a href="http://charbelkassis.000webhostapp.com/projects/">charbelkassis.000webhostapp.com/projects</a></p>
             </div>
         </section>
     </main>
