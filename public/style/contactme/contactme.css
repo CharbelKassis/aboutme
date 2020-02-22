@@ -1,44 +1,35 @@
-h1 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.info {
+    background-image: url(/pic/two-women-sitting-on-chairs-beside-window-1181719.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#contactmeParagraph {
-    font-size: 1.5rem;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-}
-
-#contactmeParagraph > em {
-    background: rgba(255,255,255,0.9);
-    display: block;
-    padding: 5px;
+.info-title, .info-text {
+    color: var(--blue);
 }
 
 #contact {
+    max-width: 300px;
+    min-height: 300px;
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     border-radius: 10px;
     background-color: var(--light-blue);
-    min-height: unset;
+    margin: 5rem auto;
 }
 
 #contact > div {
     width: 20rem;
     height: 2.5rem;
-    justify-content: space-between;
     align-items: center;
     display: flex;
-    text-align: right;
 }
 
 #contact p {
     text-align: right;
-    width: 70%;
+    width: 60%;
 }
 
 #contact i {
@@ -55,10 +46,4 @@ a, a:visited, a:hover, #phone {
 i {
     color: var(--gray-dark);
     font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-    #contactmeParagraph {
-        width: 100%;
-    }
 }

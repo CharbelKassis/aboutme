@@ -6,6 +6,17 @@ p {
     font-size: 1.2rem;
 }
 
+.info {
+    background-image: url("/pic/pens-near-keyboard-and-paper-clips-1558690.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.info-title, .info-text {
+    color: var(--blue);
+}
+
 .project .front {
     background-color: var(--light-blue);
 }

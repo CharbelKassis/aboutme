@@ -1,5 +1,8 @@
-<h1 class="text-center">Projects</h1>
-<p class="text-center"><em>Check out the projects I have created. Hover over or tap the card to gain access to the links.</em></p>
+<div class="info hero">
+    <h1 class="text-center info-title hero-title">Check out the projects</h1>
+    <p class="text-center container-text info-text hero-text">The projects consists of web pages and web application I have created for personal use and for my work. To access a specific project, <em>hover over it</em> or <em>tap it</em>.</p>
+</div>
+
 <div class="block-center">
     <div class="cards flipcards projects">
         <div class="card flipcard project">

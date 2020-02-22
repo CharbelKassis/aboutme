@@ -1,6 +1,11 @@
 :root {
     --card-width: 280px;
     --card-min-height: 400px;
+    --card-margin-left: 30px;
     --card-margin-right: 60px;
-    --card-margin-bottom: 60px;
+    --card-margin-bottom: 40px;
+    --card-margin-top: 40px;
+
+    --hero-min-height: 500px;
+    --hero-padding: 25px;
 }

@@ -8,6 +8,8 @@
     perspective: 1000px;
     margin-right: var(--card-margin-right);
     margin-bottom: var(--card-margin-bottom);
+    margin-left: var(--card-margin-left);
+    margin-top: var(--card-margin-top);
 }
 
 .flipcard .front, .flipcard .back {
@@ -16,7 +18,7 @@
     height: 100%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 15px -5px rgba(0,0,0,0.80);
     transition: all 0.5s ease-in-out;
 }
 
