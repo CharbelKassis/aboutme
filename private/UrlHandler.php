@@ -2,15 +2,22 @@
 /**
  * This class will handle the control of the URL parameters, it will decide which page to show depending on the parameters.
  * 
+ * if GET Request
+ * 
  * 1) /{page}/ => will execute /private/pages/{page}/index.php if it exists
  * 2) /{page}/{lang} => will execute /private/pages/{page}/{lang}/index.php if it exists, {lang} is the language version of the page.
  * 3) /{page}/a/.../z => this will redirect to 
  *          1) /{page}/ if a is not {lang}
  *          2) /{page}/{lang} if a is {lang}
+ * 
+ * if POST Request
+ * 
+ * 1) /{page}/ => will execute /private/post/{page}/index.php if it exists
  */
 class UrlHandler {
 
     public static $lang = array("en","fr");
+    private static $request_folders = array("GET" => "pages", "POST" => "post");
     
     /**
      *
@@ -19,6 +26,7 @@ class UrlHandler {
      */
     public function __construct($url) {
         $this->url = $url;
+        $this->type = UrlHandler::$request_folders[$_SERVER["REQUEST_METHOD"]];
 
         if(count($url) === 0)
             $this->homePage();
@@ -39,14 +47,15 @@ class UrlHandler {
 
     private function homePage() {
         include("pages/home/index.php");
-    }   
+    }
 
     /**
      * Handle a url page request with no language specified.
      */
     private function nonLangPage() {
         $page = $this->url[0];
-        $this->page("../private/pages/$page/index.php");
+        $type = $this->type;
+        $this->page("../private/$type/$page/index.php");
     }
 
     /**
@@ -55,7 +64,8 @@ class UrlHandler {
     private function langPage() {
         $page = $this->url[0];
         $lang = $this->url[1];
-        $this->page("../private/pages/$page/$lang/index.php");
+        $type = $this->type;
+        $this->page("../private/$type/$page/$lang/index.php");
     }
 
     /**
